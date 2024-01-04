@@ -1,0 +1,319 @@
+*
+{
+    box-sizing: border-box;
+    color: white;
+}
+
+.goodat
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/goodat/bg1.jpg");
+    background-size: cover;
+}
+
+.bb
+{
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    align-content: end;
+}
+
+.whatTitle
+{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.whatTitle::before
+{
+    position: absolute;
+    background-color: #8ef0d9;
+    height: 3px;
+    width: 10%;
+    top: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+}
+
+.whatP
+{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 20px;
+}
+
+
+.itemRows
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* width: 400%; */
+    padding-top: 7%;
+
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.item
+{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.icon
+{
+    font-size: 25px;
+
+    color: #8ef0d9;
+    border: 1px solid #8ef0d9;
+    width: 100px;
+    height: 80%;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
+
+    margin-right: 20px;
+
+
+}
+
+.icon i
+{
+    color: #8ef0d9;
+}
+
+
+img
+{
+    width: 50%;
+
+    text-align: center;
+}
+
+.itemTitle
+{
+    color: #8ef0d9;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    .bb
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    img
+    {
+        padding-left: 5%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .thumbup-man
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .thumbup-man img
+    {
+        padding-left: 0;
+        width: 75%;
+        overflow: hidden;
+    }
+
+    .item
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    .icon
+    {
+        color: #8ef0d9;
+        margin-left: 37%;
+        width: 70px;
+        height: 80%;
+    }
+
+    /* .itemTitle
+    {
+        font-size: 30px;
+    } */
+
+    .itemP
+    {
+        /* font-size: 25px; */
+        text-justify: auto;
+    }
+
+}
+
+.thumbup-man
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 992px) and (min-width:601px)
+{
+
+    .bb
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+    }
+
+    .itemRows
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-top: 7%;
+
+
+    }
+
+    .thumbup-man
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+
+    .icon
+    {
+        font-size: 25px;
+
+        color: #8ef0d9;
+        border: 1px solid #8ef0d9;
+        width: 75px;
+        height: 80px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+
+        margin-right: 20px;
+
+        box-sizing: border-box;
+        padding: 15px 23px;
+    }
+
+    /* 
+
+    .item{
+    
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        
+        
+    }
+
+   
+
+    .itemTitle{
+        font-size: 30px;
+    }
+
+    .itemP{
+        font-size:25px;
+        text-justify:auto;
+    } */
+}
+
+@media only screen and (min-width: 993px)
+{
+
+    .bb
+    {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        /* background-color:aliceblue; */
+        margin-left: 5%;
+
+    }
+
+    img
+    {
+
+        width: 100%;
+        height: 500px;
+    }
+
+    .thumbup-man
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 5%;
+    }
+
+
+
+    .icon
+    {
+        font-size: 25px;
+
+        color: #8ef0d9;
+        border: 1px solid #8ef0d9;
+        width: 75px;
+        height: 80px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+
+        margin-right: 20px;
+
+        box-sizing: border-box;
+        padding: 15px 23px;
+    }
+
+    .itemTitle
+    {
+        font-size: 1.25em;
+    }
+
+    .itemP
+    {
+        font-size: 1.1em;
+        text-justify: auto;
+    }
+}

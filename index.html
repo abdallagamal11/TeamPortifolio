@@ -7,44 +7,263 @@
 			href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-			crossorigin="anonymous"
-		/>
+			crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/services.css" />
+		<link rel="stylesheet" href="./assets/css/wawga.css" />
+		<link rel="stylesheet" href="./assets/css/counter.css" />
 		<title>Portifolio</title>
 	</head>
 	<body>
-		<section class="home d-flex flex-column justify-content-between">
+		<!-- HOME SECTION START -->
+		<section
+			class="home d-flex flex-column justify-content-between"
+			id="main">
 			<nav class="navbar navbar-expand-md">
-				<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<div class="navbar-brand col-6"></div>
-					<div class="navbar-nav col-6 text-center text-md-start mx-auto mx-md-0">
-					  <a class="special-btn active" href="#">Home</a>
-					  <a class="special-btn" href="#">Services</a>
-					  <a class="special-btn" href="#">Team</a>
-					  <a class="special-btn" href="#">Contact</a>
+				<div class="w-100 container-fluid">
+					<button
+						class="navbar-toggler custom-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a class="navbar-brand justify-content-center" href="#">
+						<img
+							src="./assets/img/Cheeetah.png"
+							alt="Cheeetah"
+							class="img-fluid" /> </a
+					><span class="d-none d-md-inline"
+						>For Development Sevices</span
+					>
+					<div
+						class="collapse navbar-collapse bg-md-dark col-8 justify-content-end"
+						id="navbarSupportedContent">
+						<div
+							class="navbar-nav text-center text-md-start mx-auto mx-md-0">
+							<a class="special-btn active" href="#main">Home</a>
+							<a class="special-btn" href="#services">Services</a>
+							<a class="special-btn" href="#goodat"
+								>What we excel at</a
+							>
+							<a class="special-btn" href="#">Contact</a>
+						</div>
 					</div>
-				  </div>
 				</div>
-			  </nav>
-			<div class="co-name d-flex flex-column justify-content-center align-items-center">
-				<h1 class="fw-bolder mb-4 mb-md-3">Nemo Company</h1>
-				<p class="mb-4 mb-md-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, dolorem.</p>
+			</nav>
+			<div
+				class="co-name d-flex flex-column justify-content-center align-items-center">
+				<h1 id="companyname" class="fw-bolder mb-4 mb-md-3">
+					Cheeetah Innovations
+				</h1>
+				<p class="mb-4 mb-md-3">
+					Shaping Tomorrow's Tech, Where Ideas Take Flight, Crafting
+					Code, Building Futures.
+				</p>
 				<button class="special-btn text-uppercase">Start Here</button>
 			</div>
 		</section>
+		<!-- HOME SECTION END -->
 
-		<section style="background-color: beige;">Hi</section>
-		<section style="background-color: aqua;">Test</section>
-		<section style="background-color: chocolate;">Hello World</section>
-		<section>Hi</section>
+		<!-- SERVICES SECTION START -->
+		<div class="swiper-slide" id="services">
+			<section class="pb-5 text-light bg-dark">
+				<div class="servicesTitle text-center pt-5 mb-5">
+					OUR SERVICES
+				</div>
+
+				<p class="col-sm-10 col-md-6 servicesP">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Quibusdam sequi repudiandae hic deserunt earum. Aliquam
+				</p>
+
+				<div class="servicesItems">
+					<div class="col-sm-10 col-lg-3 item1 itemContainer">
+						<!-- <i class="fa-solid fa-pencil i1"></i> -->
+						<span class="ic-serv ic-pencil"></span>
+						<span class="fw-bold fs-4 iTitle">Content Writing</span>
+						<p class="servicesP">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Dolore assumenda aut at tempora reprehenderit
+							sequi!
+						</p>
+					</div>
+
+					<div class="col-sm-10 col-lg-3 itemContainer">
+						<!-- <i class="fa-solid fa-code i2"></i> -->
+						<span class="ic-serv ic-code"></span>
+						<span class="fw-bold fs-4 iTitle">Web Development</span>
+						<p class="servicesP">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Consequuntur cupiditate voluptatum, nisi
+							tempora similique sequi?
+						</p>
+					</div>
+					<div class="col-sm-10 col-lg-3 itemContainer">
+						<!-- <i class="fa-solid fa-computer i3 col-sm-3"></i> -->
+						<span class="ic-serv ic-laptop"></span>
+						<span class="fw-bold fs-4 iTitle"
+							>Business Consultancy</span
+						>
+						<p class="servicesP">
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Aut odio nihil praesentium, ratione sint
+							tenetur?
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- SERVICES SECTION END -->
+
+		<!-- WHAT WE GOOD AT SECTION START -->
+		<section id="services" class="pb-5 goodat" id="goodat">
+			<h2 class="whatTitle text-center pt-5 mb-5">
+				WHAT ARE WE GOOD AT?
+			</h2>
+
+			<p class="col-sm-10 col-md-6 whatP">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Quibusdam sequi repudiandae hic deserunt earum. Aliquam
+			</p>
+
+			<div class="bb">
+				<div class="itemRows col-lg-8">
+					<div class="row">
+						<div class="item col-lg-6">
+							<div class="icon">
+								<i class="fa-solid fa-rocket"></i>
+							</div>
+							<div class="titleAndText">
+								<span class="itemTitle">BOOTSTRAP 5 BASED</span>
+								<p class="itemP">
+									Lorem ipsum dolor sit amet, consectetur
+									adipisicing elit. Maiores nulla autem
+									quidem?
+								</p>
+							</div>
+						</div>
+
+						<div class="item col-lg-6">
+							<div class="icon">
+								<i class="fa-solid fa-layer-group"></i>
+							</div>
+							<div class="titleAndText">
+								<span class="itemTitle"
+									>PARALLAX BACKGROUND</span
+								>
+								<p class="itemP">
+									Lorem ipsum dolor sit amet, consectetur
+									adipisicing elit. Maiores nulla autem
+									quidem?
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="item col-lg-6">
+							<div class="icon">
+								<i class="fa-solid fa-laptop"></i>
+							</div>
+							<div class="titleAndText">
+								<span class="itemTitle">FULLY RESPONSIVE</span>
+								<p class="itemP">
+									Lorem ipsum dolor sit amet, consectetur
+									adipisicing elit. Maiores nulla autem
+									quidem?
+								</p>
+							</div>
+						</div>
+
+						<div class="item col-lg-6">
+							<div class="icon">
+								<i class="fa-solid fa-gear"></i>
+							</div>
+							<div class="titleAndText">
+								<span class="itemTitle">EASY TO CUSTOMIZE</span>
+								<p class="itemP">
+									Lorem ipsum dolor sit amet, consectetur
+									adipisicing elit. Maiores nulla autem
+									quidem?
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="thumbup-man mx-md-auto">
+					<img src="./assets/img/goodat/man.png" alt="thumb up man" />
+				</div>
+			</div>
+		</section>
+
+		<!-- WHAT WE GOOD AT SECTION END -->
+
+		<!-- COUNTER SECTION START -->
+		<section class="counter mini counter-section">
+			<div class="wrapper">
+				<div class="container">
+					<i class="fa-solid fa-utensils"></i>
+					<span class="num" data-value="200">000</span>
+					<span class="text">Our Clients</span>
+				</div>
+				<div class="container">
+					<i class="fa-solid fa-utensils"></i>
+					<span class="num" data-value="350">000</span>
+					<span class="text">Projects</span>
+				</div>
+				<div class="container">
+					<i class="fa-solid fa-utensils"></i>
+					<span class="num" data-value="200">000</span>
+					<span class="text">Employees</span>
+				</div>
+			</div>
+		</section>
+		<!-- COUNTER SECTION END -->
+
+		<section class="bg-dark d-flex justify-content-center flex-column p-2">
+			<h3 class="mx-auto servicesTitle pb-1">Samples Of our projects</h3>
+			<video
+				class="mx-auto w-100 h-auto"
+				autoplay="false"
+				preload="metadata"
+				controls>
+				<source src="./assets/videos/sqrproject.mp4" type="video/mp4" />
+				Your browser does not support the video tag.
+			</video>
+		</section>
+
+		<section class="bg-dark d-flex justify-content-center flex-column p-2">
+			<h3 class="mx-auto servicesTitle pb-1">Samples Of our projects</h3>
+			<video
+				class="mx-auto w-100 h-auto"
+				autoplay="false"
+				preload="metadata"
+				controls>
+				<source
+					src="./assets/videos/maroproject.mp4"
+					type="video/mp4" />
+				Your browser does not support the video tag.
+			</video>
+		</section>
+
 		<script
 			src="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-			crossorigin="anonymous"
-		></script>
+			crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/6dc18fdb6c.js"
+			crossorigin="anonymous"></script>
 		<script src="./assets/js/main.js"></script>
 	</body>
 </html>
